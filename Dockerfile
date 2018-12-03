@@ -1,4 +1,13 @@
-FROM osrf/ros:melodic-desktop-bionic
+# Copyright (c) 2018, Christophe Paccolat (christophe.paccolat@epfl.ch)
+#
+# SPDX-License-Identifier: Zlib
+#
+# This file is licensed under the terms of the zlib license.
+# See the LICENSE.md file in the root of this repository
+# for complete details. The contributors and copyright holders
+# to this file maybe found in the SCM logs or in the AUTHORS.md file.
+
+FROM osrf/ros:melodic-desktop-full-bionic
 
 # Arguments
 ARG user
