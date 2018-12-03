@@ -79,7 +79,7 @@ RUN cd /root/pykep/build && \
 
 
 # Install python deps for the local user
-RUN pip install numpy sgp4 pytest pdoc matplotlib scikit-learn scipy catkin_tools
+RUN pip install numpy sgp4 pytest pdoc matplotlib scikit-learn scipy catkin_tools mock
 
 # Switch to user
 USER "${user}"
