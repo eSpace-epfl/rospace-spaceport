@@ -27,10 +27,11 @@ set -e
 
 # Run the container with shared X11
 docker run\
-  --net=host\
+  --net=bridge\
   -e SHELL\
   -e DISPLAY\
   -e DOCKER=1\
+  -e QT_X11_NO_MITSHM=1\
   -v "$HOME:$HOME:rw"\
   -v "/tmp/.X11-unix:/tmp/.X11-unix:rw"\
   --rm \
