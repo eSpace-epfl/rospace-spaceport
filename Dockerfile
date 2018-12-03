@@ -21,7 +21,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Basic Utilities
 RUN apt-get -y update && \
-    apt-get install -y byobu tree sudo ssh apt-utils dialog python-pip gosu
+    apt-get install -y byobu tree sudo ssh apt-utils dialog python-pip tmux
 
 # Latest X11 / mesa GL
 RUN apt-get install -y\
