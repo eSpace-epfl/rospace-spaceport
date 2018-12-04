@@ -16,7 +16,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Windows issues
-#[ -z $USER ] && USER=paccolat
+#[ -z $USER ] && USER=add-your-username-here
 
 # Get this script's path
 pushd `dirname $0` > /dev/null
