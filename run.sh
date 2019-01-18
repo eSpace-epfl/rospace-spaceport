@@ -12,7 +12,7 @@
 # Check args
 if [ "$#" -eq 0 ]; then
   echo "usage: ./run.sh IMAGE_NAME [DISPLAY]"
-  return 1
+  exit 0
 fi
 
 # On Windows, DISPLAY has to be provided manually
