@@ -23,20 +23,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y update && \
     apt-get install -y byobu tree sudo ssh apt-utils dialog python-pip tmux
 
-# Latest X11 / mesa GL
-RUN apt-get install -y\
-  libegl1-mesa-dev\
-  libgl1-mesa-dev\
-  mesa-common-dev\
-  libwayland-egl1-mesa
-
-# Dependencies required to build rviz
-RUN apt-get install -y\
-  libqt5core5a libqt5dbus5 libqt5gui5 libwayland-client0\
-  libwayland-server0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1\
-  libxcb-render-util0 libxcb-xkb1 libxkbcommon-x11-0\
-  libxkbcommon0
-
 # Dependencies required to run Orekit
 RUN apt-get install -y\
     openjdk-8-jre-headless
